@@ -1,0 +1,18 @@
+.navbar-wrapper {
+    display: table;
+    margin: auto;
+}
+
+.navbar-item {
+    float: left;
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    /* border-width: 3px; */
+    /* border-color: black; */
+    /* border-style: solid; */
+}
+
+.button {
+    padding: 10px;
+}
