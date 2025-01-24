@@ -20,15 +20,39 @@
     </div>
 </div>
 
+
 <div class="left-wrapper">
     <div class="list-group">
-        <h2 class="list-group-heading">Projects/Involvement</h3>
-        <h3 class="list-group-subheading">FSAE EV</h4>
+        <h2 class="list-group-heading">Experience</h2>
+        <h3 class="list-group-subheading"><a href="https://www.tamuformulaelectric.com" target="_blank">FSAE EV:</a> Electronics Lead</h3>        
         <ul class="list-group-bullet"> <!-- need to use .child -->
-            <li>info1</li>
-            <li>info2</li>
+            <li><span class="pdesc">AME24:</span> I was a member on the electronics subteam and I worked on the TSAL, RTDS, AVIL, and HV Thermistor Taps circuits.</li>
+            <ul class="list-group-bullet">
+                <li><span class="pdesc">TSAL:</span> the Tractive System Active Lights circuits displays vehicle tractive system status by changing a series of lights depending on whether the vehicle is energized or not. I implemented this with a two board system, one located on the main roll hoop to display the lights, and one located in the high voltage battery pack to sense the voltage while remaining galvanically isolated. </li>
+                <li><span class="pdesc">RTDS:</span> the Ready To Drive Sound circuit ensures a safe startup of the vehicle by controlling the sending of torque to the motor controller. It first checks for HVIL status, brakes pressed, and start button pressed. If these conditions are met, a sound is played and a drive enable signal is sent to the inverter.</li>
+                <li><span class="pdesc">AVIL:</span> the Accumulator Voltage Indicator Light shows the status of the vehicle side of the AIRs by turning on a light if the voltage past the AIRs is >60V. I implemented this with a 600V buck converter that provided 12V to use for normal voltage comparison.</li>
+                <li><span class="pdesc">HV Thermistor Taps:</span> the High Voltage Thermistor and Voltage Taps boards were breakout boards that supported the BMS of our high voltage battery pack. They functioned to simplify our harness breakouts to segment level rather than as a whole pack. This allowed for modular assembly and servicing.</li>
+            </ul>
+            <li><span class="pdesc">AME25:</span> I am currently serving as the electronics lead, working on integration, harnessing, and telemetry and DAQ.</li>
+            <ul class="list-group-bullet">
+                <li><span class="pdesc">Integration:</span> I am responsible for the interactions between all the circuits in the low voltage system as well as between low voltage and high voltage. I designed standardized circuit protection that boasts OCP, OVP, and RPP, which has been helpful in preventing human error from affecting testing. </li>
+                <li><span class="pdesc">Harnessing:</span> I am responsible for the high level design of the vehicle harness. This includes the signal routing, harness design, and harness manufacturing design.</li>
+                <li><span class="pdesc">Telemetry and DAQ:</span> I also work on the telemetry of the vehicle. My topology is a network of sensors that are connected through custom designed CANbus nodes that read sensor data and transmit. There is a telemetry unit on the car that takes in the CANbus messages, formats them, and sents them over serial UART to an onboard computer which hosts a webserver that we can view.</li>
+            </ul>
+        </ul>
+
+        <h3 class="list-group-subheading"><a href="https://us.msasafety.com/" target="_blank">MSA Safety:</a> Electrical Engineering Intern</h3>
+        <ul class="list-group-bullet"> <!-- need to use .child -->
+            <li>I designed a charger that interfaces with TI BQ series low voltage battery gauges. It also polls information from the battery and displays it on a GUI that also serves to detect faulty battery conditions and halt charging.</li>
+            <li>I also helped design a speech simulator to help with SCBA microphone testing.</li>
+        </ul>
+
+        <h3 class="list-group-subheading"><a href="https://devpost.com/software/aase" target="_blank">AASE:</a> American Airlines Seat Exchange, TAMUHACK X</h3>
+        <ul class="list-group-bullet"> <!-- need to use .child -->
+            <li><a href="https://github.com/Raajheer1/tamuhack-x" target="_blank">GitHub</a></li>
         </ul>
     </div>
+    
 </div>
 
 
@@ -40,6 +64,7 @@
     <a class="bottom-hyperlinks" href="https://www.linkedin.com/in/joshuawwu/">Instagram</a>
     <a class="bottom-hyperlinks" href="https://github.com/joshuawwu">GitHub</a>
     <a class="bottom-hyperlinks" href="mailto:joshuawu158@gmail.com">Gmail</a>
+    <a class="bottom-hyperlinks" href="https://open.spotify.com/user/7yxfjkgwn5wn0ch1hruz3fcfo?si=7f4ca3391df24227">Spotify</a>
 </div>
 
 </body>
