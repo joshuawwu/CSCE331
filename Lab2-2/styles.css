@@ -59,10 +59,8 @@
     /* align-items: center; */
     display: flex;
     flex-direction: row;
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
-    margin: 5rem;
-    padding-bottom: 3rem;
 }
 
 .rowcenterS {
@@ -76,12 +74,12 @@
 
 .rowitem {
     text-align: left;
-    justify-self: center;
+    /* justify-self: center; */
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 42.5%;
+    margin: 3rem;
+    height: auto;
 }
 
 .rowitemS {
@@ -182,8 +180,9 @@
 
 /* Resume */
 .resume {
-    height: 1000px;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* standard */
