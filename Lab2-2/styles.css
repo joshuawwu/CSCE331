@@ -152,6 +152,10 @@
     margin: 2rem;
 }
 
+.center {
+    align-self: center;
+}
+
 /* lists */
 .list-group {
     margin: 2rem;
